@@ -1,0 +1,19 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+	<DockLayout>
+		<ScrollView dock="bottom">
+			<Repeater id="productsList">
+				<Repeater.itemTemplate>
+					<DockLayout tap="showDetails">
+						<Image dock="top" src="{{ imgSrc }}" stretch="aspectFit" class="prodImg"/>
+						<StackLayout dock="bottom">
+							<Label text="{{ itemname || 'Downloading...' }}" class="prodTitle"/>
+							<Label text="{{ category1 || 'Downloading...' }}" class="prodCateg"/>
+							<Label text="{{ ' $ ' + price || 'Downloading...' }}" class="prodPrice"/>
+							<StackLayout class="hr" />
+						</StackLayout>
+					</DockLayout>
+				</Repeater.itemTemplate>
+			</Repeater>
+		</ScrollView>
+	</DockLayout>
+</Page>

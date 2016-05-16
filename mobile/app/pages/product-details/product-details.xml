@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+	<ScrollView>
+		<DockLayout>
+			<Image dock="top" src="{{ imgSrc }}" stretch="aspectFit" class="prodImg" />
+			<StackLayout dock="bottom">
+				<StackLayout class="hr" />
+				<Label text="{{ catdescription || 'Downloading...' }}" class="prodDesc"
+					textWrap="true" />
+			</StackLayout>
+		</DockLayout>
+	</ScrollView>
+</Page>
