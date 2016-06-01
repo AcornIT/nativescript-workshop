@@ -5,7 +5,7 @@ var http = require("http");
 var frameModule = require("ui/frame");
 
 var page = null;
-var url = "http://192.168.1.220:3000"; //the server url
+var url = "http://sports.akera.io:8080"; //the server url
 
 var productsList = null;
 var products = [];
